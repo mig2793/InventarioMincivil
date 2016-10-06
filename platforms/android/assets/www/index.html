@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <title>Inventario almacenes Mincivil S.A</title>
+    </head>
+    <body>
+        <div class="load">
+            <div class="img-load"></div>
+        </div>
+        <div id="content">
+            <div class="table">
+                <div class="table-cell">
+                    <div id="no-img"><div id="takephoto"></div></div>
+                </div>
+                <div class="table-cell font-small">
+                    <div id="content1-form" class="descriptions-form">
+                        <span class="span-title">Proyecto: </span><span id="project-text"></span><br>
+                        <span class="span-title">Cód U: </span><span id="code-location"></span><br>
+                        <span class="span-title">Desc Item: </span><span id="description-text"></span><br>
+                        <span class="span-title">Cód I: </span><span id="code-item"></span><br>
+                        <span class="span-title">Cód NR: </span><span id="new-reference"></span><br>
+                        <span class="span-title">Marca: </span><span id="brand-text"></span><br>
+                        <span class="span-title">Cantidad: </span><span id="quantity-text"></span><br>
+                        <span class="span-title">Grupo: </span><span id="code-group-text"></span><br>
+                        <span class="span-title">Cód Equi: </span><span id="code-equivalence-text"></span>
+                    </div>                        
+                </div>
+                
+            </div>
+            <div id="content-bottom">
+                <select id="search-project" style="width: 100%">
+                    <option selected disabled>Proyecto</option>
+                </select>
+                <button id="location" class="button-medium button-sharp-green">Lectura código de barras ubicación</button>
+                <button id="maker-codeItem" class="button-medium button-yellow">Lectura código de barras repuesto</button>
+                <br>
+                <fieldset>
+                    <legend>Si no encotró el código, intente</legend>
+                    <label>Buscar por:</label>
+                    <select id="search-item-select">
+                        <option value="1" selected>Referencia</option>
+                        <option value="2">Descripción</option>
+                    </select>
+                    <div class="table">
+                        <div class="table-medium">
+                            <input type="text" id="search-item-text" name="search-item-text" placeholder="Busca aquí" style="width:90% !important">   
+                        </div>
+                        <div  class="table-small">
+                            <button id="search-button-reference" style="width:100% !important" class="button-red button-extra-small">Buscar</button>
+                        </div>
+                    </div>
+                    <select id="search-ci-refrence" style="width: 100%">
+                    </select>
+                </fieldset>
+                <fieldset>      
+                    <span>Si no encuentra el codigo del repuesto, puede crear uno nuevo aquí:</span>  
+                    <button id="item-code-refrence" class="button-medium button-orange">Crear nuevo código de barras</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Busque aquí la equivalencia del código a inventariar</legend>
+                    <button id="item-button-equivalence" class="button-medium button-blue">Lectura código de barras equivalencia</button>
+                    <div class="table">
+                        <div class="table-medium">
+                            <input type="text" id="search-item-equivalence" name="search-item-equivalence" placeholder="Busca aquí" style="width:90% !important">   
+                        </div>
+                        <div  class="table-small">
+                            <button id="search-button-equivalence" style="width:100% !important" class="button-red button-extra-small">Buscar</button>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Complete y verifique la información del codigo a inventariar</legend>
+                    <div class="table">
+                        <div class="table-medium">
+                            <select id="search-marca" style="width:96% !important">
+                                <option selected disabled>Marca</option>
+                            </select>
+                        </div>
+                        <div class="table-small">
+                            <input type="number" id="quantity" name="quantity" placeholder="Cantidad" style="width:90%">
+                        </div>
+                    </div>
+                    <select id="search-item-group" style="width:100% !important">
+                        <option selected disabled>Grupo</option>
+                    </select>  
+
+                    <textarea id="description-newitem" placeholder="Descripción item"></textarea>  
+                </fieldset>
+
+                <button id="button-send" class="button-large button-green">Guardar</button>
+                <!--<button id="clear" class="button-large button-red">Limpiar</button>-->
+            </div>
+        </div>
+            
+        <!--Libs-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+    </body>
+</html>
