@@ -3,15 +3,22 @@ body{
     width: 100%;
     height: auto;
     font-size: 13px;
+    /* overflow: hidden; */
+}
+
+em{
+  color: black;
+  font-weight: 900;
 }
 
 .load{
    background-color: rgba(0, 0, 0, 0.4);
-   position: absolute;
+   position: fixed;
    width: 100%;
    height: 100%;
    top:0;
    z-index: 5000;
+   overflow: hidden;
    display: none;
 }
 
@@ -23,6 +30,24 @@ body{
    height: 100%;
    background-repeat: no-repeat;
    margin : auto;
+}
+
+#login{
+  position: fixed;
+  z-index:1000;
+  background-color: white;
+  width:100%;
+  height: 100%;
+}
+
+#content-login{
+  width:80%;
+  text-align:center;
+  margin:auto;
+  margin-top: 70%;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 #content-bottom{
@@ -56,6 +81,16 @@ body{
 .button-green{
     width: 50%;
     background-color: #8dd642;
+}
+
+.colors-inventory{width: 25px;height: 25px;display: inline-block;margin-top: 8px;border-radius: 50%;}
+
+#verde{
+  background-color: green;
+}
+
+#naranja{
+  background-color: orange;
 }
 
 .button-blue{
@@ -95,7 +130,7 @@ body{
 #no-img{
     background-image: url("../img/no-imagen.jpg");
     background-size: 100% 100%;
-    width: 150px;
+    width: 100%;
     height: 150px;
     margin: 5px 5px 5px 0px;
     position: relative;
@@ -116,16 +151,20 @@ body{
    margin: 5px;
 }
 
+#code-equivalence-text{margin-top: 5px;width: 100%;}
+
+#code-equivalence-text>span{border: 1px solid black;padding: 2px;border-radius: 20px;background-color: #fe6e92;margin-left: 2px;display: inline-block;margin-top: 3px;}
+
 #content1-form{
-    position: absolute;
+    /* position: absolute; */
     margin-top: 5px;
     text-align: left;
 }
 
 #content{
     padding: 10px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
+    /* overflow-y: scroll; */
     text-align: center;
 }
 
@@ -170,10 +209,12 @@ input{
     padding: 3px;
 }
 
-.table{display: table;width: 100%;}
+.table{/* display: table; */width: 100%;}
 .table-cell{
-    display: table-cell;
-    width: 50%;
+    display: inline-block;
+    width: 47%;
+    margin-left: 5px;
+    vertical-align: text-top;
 }
 form{
     width: 100%;

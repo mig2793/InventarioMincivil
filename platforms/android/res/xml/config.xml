@@ -18,6 +18,15 @@
     <feature name="FileTransfer">
         <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
     </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="broadcaster">
+        <param name="android-package" value="org.bsc.cordova.CDVBroadcaster" />
+    </feature>
+    <feature name="BluetoothPrinter">
+        <param name="android-package" value="com.ru.cordova.printer.bluetooth.BluetoothPrinter" />
+    </feature>
     <name>InventarioMincivil</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

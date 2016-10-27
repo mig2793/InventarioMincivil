@@ -228,6 +228,30 @@ module.exports = [
         "clobbers": [
             "window.FileTransfer"
         ]
+    },
+    {
+        "id": "cordova-plugin-device.device",
+        "file": "plugins/cordova-plugin-device/www/device.js",
+        "pluginId": "cordova-plugin-device",
+        "clobbers": [
+            "device"
+        ]
+    },
+    {
+        "id": "cordova-plugin-broadcaster.broadcaster",
+        "file": "plugins/cordova-plugin-broadcaster/www/broadcaster.js",
+        "pluginId": "cordova-plugin-broadcaster",
+        "clobbers": [
+            "broadcaster"
+        ]
+    },
+    {
+        "id": "cordova-plugin-bluetooth-printer.BluetoothPrinter",
+        "file": "plugins/cordova-plugin-bluetooth-printer/www/BluetoothPrinter.js",
+        "pluginId": "cordova-plugin-bluetooth-printer",
+        "clobbers": [
+            "BTPrinter"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -238,7 +262,10 @@ module.exports.metadata =
     "cordova-plugin-camera": "2.3.0",
     "phonegap-plugin-barcodescanner": "6.0.2",
     "cordova-plugin-file": "4.3.0",
-    "cordova-plugin-file-transfer": "1.6.0"
+    "cordova-plugin-file-transfer": "1.6.0",
+    "cordova-plugin-device": "1.1.3",
+    "cordova-plugin-broadcaster": "2.0.6",
+    "cordova-plugin-bluetooth-printer": "0.0.1-dev"
 };
 // BOTTOM OF METADATA
 });

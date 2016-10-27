@@ -18,6 +18,15 @@
         },
         "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.inventario.inventario"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.inventario.inventario"
+        },
+        "cordova-plugin-broadcaster": {
+            "PACKAGE_NAME": "com.inventario.inventario"
+        },
+        "cordova-plugin-bluetooth-printer": {
+            "PACKAGE_NAME": "com.inventario.inventario"
         }
     },
     "dependent_plugins": {

@@ -10,6 +10,13 @@
         <title>Inventario almacenes Mincivil S.A</title>
     </head>
     <body>
+        <div id="login">
+            <div id="content-login">
+                <span>Coloca la contraseña para comenzar el inventario</span><br>
+                <input type="text" id="login-txt" name="login-txt" />
+                <button id="send-password" class="button-large button-green">Envíar</button>
+            </div>
+        </div>
         <div class="load">
             <div class="img-load"></div>
         </div>
@@ -17,6 +24,7 @@
             <div class="table">
                 <div class="table-cell">
                     <div id="no-img"><div id="takephoto"></div></div>
+                    <span class="span-title">Ubicaciones: </span><div id="locations-item"></div>
                 </div>
                 <div class="table-cell font-small">
                     <div id="content1-form" class="descriptions-form">
@@ -28,7 +36,7 @@
                         <span class="span-title">Marca: </span><span id="brand-text"></span><br>
                         <span class="span-title">Cantidad: </span><span id="quantity-text"></span><br>
                         <span class="span-title">Grupo: </span><span id="code-group-text"></span><br>
-                        <span class="span-title">Cód Equi: </span><span id="code-equivalence-text"></span>
+                        <span class="span-title">Cód Equi: </span><div id="code-equivalence-text"></div>
                     </div>                        
                 </div>
                 
@@ -56,6 +64,7 @@
                         </div>
                     </div>
                     <select id="search-ci-refrence" style="width: 100%">
+                        <option selected disabled>Referencias encontradas</option>
                     </select>
                 </fieldset>
                 <fieldset>      
@@ -73,6 +82,9 @@
                             <button id="search-button-equivalence" style="width:100% !important" class="button-red button-extra-small">Buscar</button>
                         </div>
                     </div>
+                    <select id="search-item-equivalence-all" style="width:100% !important">
+                        <option selected disabled>Referencias encontradas</option>
+                    </select>
                 </fieldset>
                 <fieldset>
                     <legend>Complete y verifique la información del codigo a inventariar</legend>
@@ -88,13 +100,19 @@
                     </div>
                     <select id="search-item-group" style="width:100% !important">
                         <option selected disabled>Grupo</option>
-                    </select>  
+                    </select> 
 
                     <textarea id="description-newitem" placeholder="Descripción item"></textarea>  
                 </fieldset>
 
+                <div id="colors">
+                    <div class="colors-inventory" id="verde"></div>
+                    <div class="colors-inventory" id="naranja"></div>
+                </div>
+
+                <button id="clear" class="button-large button-red">Limpiar</button>
                 <button id="button-send" class="button-large button-green">Guardar</button>
-                <!--<button id="clear" class="button-large button-red">Limpiar</button>-->
+                
             </div>
         </div>
             
